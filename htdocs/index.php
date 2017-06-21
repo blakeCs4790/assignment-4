@@ -41,10 +41,11 @@
     $lname2 = 'Grint';
 
 
-     $myDb = fConnectToDatabase();
-     fInsertToDatabase($myDb, $asin, $title, $price, $fname, $lname, $fname2, $lname2); //i know in prod these would come from a form.
-     fDeleteFromDatabase($myDb, $deleteId = 1); //In prod $deleteId value would come from a form.
-     fListFromDatabase($myDb);
+    $myDb = fConnectToDatabase();
+//fInsertToDatabase($myDb, $asin, $title, $price, $fname, $lname, $fname2, $lname2); //i know in prod these would come from a form.
+//fDeleteFromDatabase($myDb, $deleteId = 1); //In prod $deleteId value would come from a form.
+fListFromDatabase($myDb);
+//fjoin($myDb);
 
 	
 
