@@ -42,7 +42,7 @@ function fListFromDatabase($myDb) {
     }
 }
 
-/*function fjoin($myDb)
+function fjoin($myDb)
 {
     $sql = $myDb->prepare("SELECT * FROM dvdactors INNER JOIN dvdcrosswalk on dvdactors.actorId = dvdcrosswalk.actorId
                            INNER JOIN dvdtitles on dvdcrosswalk.asin = dvdtitles.asin");
@@ -50,5 +50,5 @@ function fListFromDatabase($myDb) {
       while($row = $sql->fetch()) {
           print_r($row);
       }
-}*/
+}
 ?>
